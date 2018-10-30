@@ -1,0 +1,15 @@
+<templateSet group="Go">
+  <template name="handler" value="func $PREFIX$_Logic_CS_$INDEX$(ptSvc *microservice.TMicroServiceWrapper, iParam interface{}, ptConn *netservice.TNetConnection, ptHead *netservice.TPacketHead, slcData []byte) {&#10;    this := iParam.(*TMainLogicService)&#10;    ptRcv := &amp;cs.CS_$INDEX${}&#10;    if errUnmar := proto.Unmarshal(slcData, ptRcv); errUnmar != nil {&#10;        this.tLogger.Error(&quot;$PREFIX$_Logic_CS_$INDEX$ Unmarshal Error:%v&quot;, errUnmar)&#10;        return&#10;    }&#10;    &#10;    ptUser := this.ptUserMgr.GetOnlineUser(ptHead.Uid)&#10;    if ptUser == nil {&#10;        this.tLogger.Error(&quot;$PREFIX$_Logic_CS_$INDEX$ userid:%d offline&quot;, ptHead.Uid)&#10;        return&#10;    }&#10;    &#10;    ptSnd := &amp;cs.SC_$INDEX${}&#10;    &#10;    dwSndMsgId := uint32(cs.MSG_ID_SC_$INDEX$)&#10;    $END$&#10;    ptUser.SendMsgToGate(dwSndMsgId, ptHead, ptSnd)&#10;}" description="create handler template" toReformat="false" toShortenFQNames="true">
+    <variable name="PREFIX" expression="capitalize(camelCase(substringBefore(fileNameWithoutExtension(), &quot;_msg_handler&quot;)))" defaultValue="" alwaysStopAt="true" />
+    <variable name="INDEX" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GO_FILE" value="true" />
+    </context>
+  </template>
+  <template name="actionlog" value="func LogUser$INDEX$(ptGame *TGameModule, ptUser *TUser) {&#10;    ptActLog := GetActionLog(ptGame, ptUser, LOG_MAIN_USER_ACTION, $INDEX)&#10;    $END$&#10;    SendActionLog(ptGame, ptActLog)&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="INDEX" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GO" value="true" />
+    </context>
+  </template>
+</templateSet>

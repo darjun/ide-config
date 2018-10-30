@@ -1,0 +1,103 @@
+<application>
+  <component name="RecentDirectoryProjectsManager">
+    <option name="recentPaths">
+      <list>
+        <option value="D:/devstar001/server/trunk" />
+        <option value="D:/code/golang" />
+        <option value="D:/server" />
+        <option value="D:/work/dev" />
+        <option value="D:/work/self-testing" />
+        <option value="D:/work/scripts" />
+        <option value="D:/source/redis/src" />
+      </list>
+    </option>
+    <option name="openPaths">
+      <list>
+        <option value="D:/devstar001/server/trunk" />
+      </list>
+    </option>
+    <option name="lastPath" value="D:/devstar001/server/trunk" />
+    <option name="pid" value="" />
+    <option name="additionalInfo">
+      <map>
+        <entry key="D:/code/golang">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.5087.39" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1539760468674" />
+              <option name="buildTimestamp" value="1527148698492" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="D:/devstar001/server/trunk">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.5087.39" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1540870941181" />
+              <option name="buildTimestamp" value="1527148736695" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="D:/server">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.5087.39" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1537425043018" />
+              <option name="buildTimestamp" value="1527148693391" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="D:/source/redis/src">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.5087.39" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1529913328150" />
+              <option name="buildTimestamp" value="1527148706745" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="D:/work/dev">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.5087.39" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1536910588408" />
+              <option name="buildTimestamp" value="1527148693403" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="D:/work/scripts">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.5087.39" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1536827869766" />
+              <option name="buildTimestamp" value="1527148717281" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="D:/work/self-testing">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.5087.39" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1536889987955" />
+              <option name="buildTimestamp" value="1527148690194" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</application>
