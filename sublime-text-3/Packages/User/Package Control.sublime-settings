@@ -1,0 +1,22 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"All Autocomplete",
+		"Boxy Theme",
+		"CTags",
+		"MarkdownPreview",
+		"Material Theme",
+		"OmniMarkupPreviewer",
+		"Package Control",
+		"SFTP",
+		"Skins",
+		"SublimeLinter",
+		"SublimeLinter-lua",
+		"SublimeLinter-luacheck"
+	]
+}

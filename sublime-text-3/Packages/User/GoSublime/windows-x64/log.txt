@@ -1,0 +1,493 @@
+Gocode pkg: "redisdemo"
+Gocode env: gocode.margoEnv{LibPath:"C:\\Go\\pkg\\windows_amd64;D:\\code\\golang\\pkg\\windows_amd64", GOOS:"windows", GOARCH:"amd64", Compiler:"gc", GOROOT:"C:\\Go\\", GOPATH:"D:\\code\\golang", InstallSuffix:""}
+Gocode pkg: "github.com/go-redis/redis"
+Gocode pkg: "redisdemo"
+Gocode pkg: "simpledemo"
+Gocode pkg: "hello"
+Gocode pkg: "simpledemo"
+Gocode pkg: "."
+Gocode pkg: "simpledemo"
+Gocode pkg: "."
+Gocode pkg: "."
+Gocode env: gocode.margoEnv{LibPath:"C:\\Go\\pkg\\windows_amd64;D:\\code\\golang\\pkg\\windows_amd64", GOOS:"windows", GOARCH:"amd64", Compiler:"gc", GOROOT:"C:\\Go\\", GOPATH:"D:\\code\\golang", InstallSuffix:""}
+Gocode pkg: "."
+Gocode env: gocode.margoEnv{LibPath:"C:\\Go\\pkg\\windows_amd64;D:\\code\\golang\\pkg\\windows_amd64", GOOS:"windows", GOARCH:"amd64", Compiler:"gc", GOROOT:"C:\\Go\\", GOPATH:"D:\\code\\golang", InstallSuffix:""}
+Gocode pkg: "simpledemo"
+Gocode pkg: "hello"
+Gocode pkg: "."
+Gocode pkg: "hello"
+Gocode pkg: "."
+Gocode pkg: "hello"
+Gocode pkg: "."
+Gocode pkg: "hello"
+Gocode pkg: "."
+Gocode pkg: "simpledemo"
+Gocode pkg: "."
+Gocode env: gocode.margoEnv{LibPath:"C:\\Go\\pkg\\windows_amd64;D:\\code\\golang\\pkg\\windows_amd64", GOOS:"windows", GOARCH:"amd64", Compiler:"gc", GOROOT:"C:\\Go\\", GOPATH:"D:\\code\\golang", InstallSuffix:""}
+Gocode pkg: "."
+Gocode env: gocode.margoEnv{LibPath:"C:\\Go\\pkg\\windows_amd64;D:\\code\\golang\\pkg\\windows_amd64", GOOS:"windows", GOARCH:"amd64", Compiler:"gc", GOROOT:"C:\\Go\\", GOPATH:"D:\\code\\golang", InstallSuffix:""}
+Gocode pkg: "."
+Gocode env: gocode.margoEnv{LibPath:"C:\\Go\\pkg\\windows_amd64;D:\\code\\golang\\pkg\\windows_amd64", GOOS:"windows", GOARCH:"amd64", Compiler:"gc", GOROOT:"C:\\Go\\", GOPATH:"D:\\code\\golang", InstallSuffix:""}
+Gocode pkg: "."
+Gocode env: gocode.margoEnv{LibPath:"C:\\Go\\pkg\\windows_amd64;D:\\code\\golang\\pkg\\windows_amd64", GOOS:"windows", GOARCH:"amd64", Compiler:"gc", GOROOT:"C:\\Go\\", GOPATH:"D:\\code\\golang", InstallSuffix:""}
+margo: 2018/04/27 09:35:45 broker.go:105: gocode_complete#mg9.autoken.f1e30b07-b9a5-4cae-a0f8-7b37c03ab6aa PANIC: runtime error: slice bounds out of range
+goroutine 44 [running]:
+gosublime/cmd/margo_pkg.(*Broker).call.func1(0xc042a4c020, 0xc0421c22a0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:104 +0xc9
+panic(0x879e00, 0xb7ba80)
+	C:/Go/src/runtime/panic.go:502 +0x237
+gosublime/something-borrowed/gocode.(*auto_complete_context).apropos(0xc042150380, 0xc043f66000, 0x1e62, 0x2000, 0xc0426b41c0, 0x3d, 0xffffffffffffffff, 0x1, 0x1, 0xc0426b41c0, ...)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/something-borrowed/gocode/autocompletecontext.go:349 +0x98c
+gosublime/something-borrowed/gocode.(*margoState).Complete(0xc0421780b0, 0x0, 0x0, 0x0, 0xc042a1c03a, 0x6, 0xc04299e060, 0x1, 0x1, 0xc043f66000, ...)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/something-borrowed/gocode/bridge._margo_.go:80 +0x13e
+gosublime/cmd/margo_pkg.(*mGocode).completions(0xc0423b4000, 0xc043f66000, 0x1e62, 0x2000, 0xc0426b41c0, 0x3d, 0xffffffffffffffff, 0x3, 0xc043874150, 0x0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/m_gocode.go:95 +0x150
+gosublime/cmd/margo_pkg.(*mGocode).Call(0xc0423b4000, 0x922890, 0xc042a4c020, 0xc0421c22a0, 0x0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/m_gocode.go:76 +0x30b
+gosublime/cmd/margo_pkg.(*Broker).call(0xc0421c22a0, 0xc042a4c020, 0x95eb80, 0xc0423b4000)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:113 +0xa1
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:188 +0xa2
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+goroutine 1 [syscall, locked to thread]:
+syscall.Syscall6(0x77ae1500, 0x5, 0x2f8, 0xc0421ce000, 0x1000, 0xc0439f784c, 0x0, 0x0, 0x0, 0x0, ...)
+	C:/Go/src/runtime/syscall_windows.go:184 +0xfc
+syscall.ReadFile(0x2f8, 0xc0421ce000, 0x1000, 0x1000, 0xc0439f784c, 0x0, 0xc042ba9f80, 0x1)
+	C:/Go/src/syscall/zsyscall_windows.go:312 +0xe0
+syscall.Read(0x2f8, 0xc0421ce000, 0x1000, 0x1000, 0x877a40, 0xc0423b4018, 0x310000)
+	C:/Go/src/syscall/syscall_windows.go:295 +0x6f
+internal/poll.(*FD).Read(0xc04208c000, 0xc0421ce000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	C:/Go/src/internal/poll/fd_windows.go:476 +0x1a9
+os.(*File).read(0xc042004010, 0xc0421ce000, 0x1000, 0x1000, 0xc042066ed0, 0x8df740, 0xc0423b4000)
+	C:/Go/src/os/file_windows.go:204 +0x55
+os.(*File).Read(0xc042004010, 0xc0421ce000, 0x1000, 0x1000, 0xc04202a070, 0xc0439f79c8, 0x4038cc)
+	C:/Go/src/os/file.go:107 +0x71
+bufio.(*Reader).fill(0xc04216e300)
+	C:/Go/src/bufio/bufio.go:100 +0x125
+bufio.(*Reader).ReadSlice(0xc04216e300, 0xc04421590a, 0xc0439f7a88, 0x4035f5, 0xc0421380c0, 0xc044215980, 0xc0439f7bb8)
+	C:/Go/src/bufio/bufio.go:341 +0x33
+bufio.(*Reader).ReadBytes(0xc04216e300, 0xc0439f7b0a, 0xc0423b4000, 0x0, 0x0, 0x0, 0x0)
+	C:/Go/src/bufio/bufio.go:419 +0x72
+gosublime/cmd/margo_pkg.(*Broker).accept(0xc0421c22a0, 0xc0421380c0, 0xc0421c2200)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:128 +0x53
+gosublime/cmd/margo_pkg.(*Broker).Loop(0xc0421c22a0, 0x920001)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:213 +0x15a
+gosublime/cmd/margo_pkg.Main()
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/main.go:140 +0x58c
+main.main()
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo/main.go:8 +0x27
+
+goroutine 33 [chan receive]:
+gosublime/something-borrowed/gocode.new_file_reader.func1(0xc0421540a0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/something-borrowed/gocode/utils.go:229 +0x78
+created by gosublime/something-borrowed/gocode.new_file_reader
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/something-borrowed/gocode/utils.go:226 +0x8f
+
+goroutine 34 [chan receive, 4316 minutes]:
+gosublime/cmd/margo_pkg.init.1.func1()
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/g_autoinst.go:114 +0xd8
+created by gosublime/cmd/margo_pkg.init.1
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/g_autoinst.go:113 +0x3c
+
+goroutine 35 [sleep, locked to thread]:
+time.Sleep(0x77359400)
+	C:/Go/src/runtime/time.go:102 +0x17b
+gosublime/cmd/margo_pkg.startOomKiller.func1(0x3e8)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/oom.go:31 +0xb5
+created by gosublime/cmd/margo_pkg.startOomKiller
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/oom.go:10 +0x46
+
+goroutine 36 [sleep]:
+time.Sleep(0x6fc23ac00)
+	C:/Go/src/runtime/time.go:102 +0x17b
+gosublime/cmd/margo_pkg.Main.func1(0x6fc23ac00, 0xc0421c22a0, 0xc04214a1a0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/main.go:122 +0xe1
+created by gosublime/cmd/margo_pkg.Main
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/main.go:120 +0x694
+
+goroutine 37 [chan receive, 4316 minutes]:
+gosublime/cmd/margo_pkg.Main.func2(0xc0421c22a0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/main.go:135 +0xfd
+created by gosublime/cmd/margo_pkg.Main
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/main.go:134 +0x55e
+
+goroutine 38 [chan receive]:
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:187 +0xba
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+goroutine 39 [chan receive]:
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:187 +0xba
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+goroutine 40 [chan receive]:
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:187 +0xba
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+goroutine 41 [chan receive]:
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:187 +0xba
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+goroutine 42 [chan receive]:
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:187 +0xba
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+goroutine 43 [chan receive]:
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:187 +0xba
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+goroutine 45 [chan receive]:
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:187 +0xba
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+goroutine 46 [chan receive]:
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:187 +0xba
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+goroutine 47 [chan receive]:
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:187 +0xba
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+goroutine 48 [chan receive]:
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:187 +0xba
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+goroutine 81 [chan receive]:
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:187 +0xba
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+goroutine 82 [chan receive]:
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:187 +0xba
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+goroutine 83 [chan receive]:
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:187 +0xba
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+goroutine 84 [chan receive]:
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:187 +0xba
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+goroutine 85 [chan receive]:
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:187 +0xba
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+goroutine 86 [chan receive]:
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:187 +0xba
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+goroutine 87 [chan receive]:
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:187 +0xba
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+goroutine 88 [chan receive]:
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:187 +0xba
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+goroutine 89 [chan receive]:
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:187 +0xba
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+
+
+** 2018-04-27 09:35:45.165786 **:
+GsComplete: broker: gocode_complete#mg9.autoken.f1e30b07-b9a5-4cae-a0f8-7b37c03ab6aa PANIC
+--------------------------------
+margo: 2018/04/27 09:35:45 broker.go:105: gocode_complete#mg9.autoken.65ffcf08-e5c3-44a1-8fe6-baad743698c1 PANIC: runtime error: slice bounds out of range
+goroutine 84 [running]:
+gosublime/cmd/margo_pkg.(*Broker).call.func1(0xc042b32360, 0xc0421c22a0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:104 +0xc9
+panic(0x879e00, 0xb7ba80)
+	C:/Go/src/runtime/panic.go:502 +0x237
+gosublime/something-borrowed/gocode.(*auto_complete_context).apropos(0xc042150380, 0xc043f9a000, 0x1e63, 0x2000, 0xc04201dec0, 0x3d, 0xffffffffffffffff, 0x1, 0x1, 0xc04201dec0, ...)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/something-borrowed/gocode/autocompletecontext.go:349 +0x98c
+gosublime/something-borrowed/gocode.(*margoState).Complete(0xc0421780b0, 0x0, 0x0, 0x0, 0xc042a1c13a, 0x6, 0xc04299e0a0, 0x1, 0x1, 0xc043f9a000, ...)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/something-borrowed/gocode/bridge._margo_.go:80 +0x13e
+gosublime/cmd/margo_pkg.(*mGocode).completions(0xc0423b4080, 0xc043f9a000, 0x1e63, 0x2000, 0xc04201dec0, 0x3d, 0xffffffffffffffff, 0x0, 0x0, 0x0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/m_gocode.go:95 +0x150
+gosublime/cmd/margo_pkg.(*mGocode).Call(0xc0423b4080, 0x922890, 0xc042b32360, 0xc0421c22a0, 0x0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/m_gocode.go:76 +0x30b
+gosublime/cmd/margo_pkg.(*Broker).call(0xc0421c22a0, 0xc042b32360, 0x95eb80, 0xc0423b4080)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:113 +0xa1
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:188 +0xa2
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+goroutine 1 [syscall, locked to thread]:
+syscall.Syscall6(0x77ae1500, 0x5, 0x2f8, 0xc0421ce000, 0x1000, 0xc0439f784c, 0x0, 0x0, 0x0, 0x0, ...)
+	C:/Go/src/runtime/syscall_windows.go:184 +0xfc
+syscall.ReadFile(0x2f8, 0xc0421ce000, 0x1000, 0x1000, 0xc0439f784c, 0x0, 0xc042bdea80, 0x1)
+	C:/Go/src/syscall/zsyscall_windows.go:312 +0xe0
+syscall.Read(0x2f8, 0xc0421ce000, 0x1000, 0x1000, 0x877a40, 0xc0423b4098, 0x310000)
+	C:/Go/src/syscall/syscall_windows.go:295 +0x6f
+internal/poll.(*FD).Read(0xc04208c000, 0xc0421ce000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	C:/Go/src/internal/poll/fd_windows.go:476 +0x1a9
+os.(*File).read(0xc042004010, 0xc0421ce000, 0x1000, 0x1000, 0xc042066ed0, 0x8df740, 0xc0423b4080)
+	C:/Go/src/os/file_windows.go:204 +0x55
+os.(*File).Read(0xc042004010, 0xc0421ce000, 0x1000, 0x1000, 0xc04202a070, 0xc0439f79c8, 0x4038cc)
+	C:/Go/src/os/file.go:107 +0x71
+bufio.(*Reader).fill(0xc04216e300)
+	C:/Go/src/bufio/bufio.go:100 +0x125
+bufio.(*Reader).ReadSlice(0xc04216e300, 0xc0442f600a, 0xc0439f7a88, 0x4035f5, 0xc0421380c0, 0xc0442f6060, 0xc0439f7bb8)
+	C:/Go/src/bufio/bufio.go:341 +0x33
+bufio.(*Reader).ReadBytes(0xc04216e300, 0xc0439f7b0a, 0xc0423b4080, 0x0, 0x0, 0x0, 0x0)
+	C:/Go/src/bufio/bufio.go:419 +0x72
+gosublime/cmd/margo_pkg.(*Broker).accept(0xc0421c22a0, 0xc0421380c0, 0xc0421c2200)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:128 +0x53
+gosublime/cmd/margo_pkg.(*Broker).Loop(0xc0421c22a0, 0x920001)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:213 +0x15a
+gosublime/cmd/margo_pkg.Main()
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/main.go:140 +0x58c
+main.main()
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo/main.go:8 +0x27
+
+goroutine 33 [chan receive]:
+gosublime/something-borrowed/gocode.new_file_reader.func1(0xc0421540a0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/something-borrowed/gocode/utils.go:229 +0x78
+created by gosublime/something-borrowed/gocode.new_file_reader
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/something-borrowed/gocode/utils.go:226 +0x8f
+
+goroutine 34 [chan receive, 4316 minutes]:
+gosublime/cmd/margo_pkg.init.1.func1()
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/g_autoinst.go:114 +0xd8
+created by gosublime/cmd/margo_pkg.init.1
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/g_autoinst.go:113 +0x3c
+
+goroutine 35 [sleep, locked to thread]:
+time.Sleep(0x77359400)
+	C:/Go/src/runtime/time.go:102 +0x17b
+gosublime/cmd/margo_pkg.startOomKiller.func1(0x3e8)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/oom.go:31 +0xb5
+created by gosublime/cmd/margo_pkg.startOomKiller
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/oom.go:10 +0x46
+
+goroutine 36 [sleep]:
+time.Sleep(0x6fc23ac00)
+	C:/Go/src/runtime/time.go:102 +0x17b
+gosublime/cmd/margo_pkg.Main.func1(0x6fc23ac00, 0xc0421c22a0, 0xc04214a1a0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/main.go:122 +0xe1
+created by gosublime/cmd/margo_pkg.Main
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/main.go:120 +0x694
+
+goroutine 37 [chan receive, 4316 minutes]:
+gosublime/cmd/margo_pkg.Main.func2(0xc0421c22a0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/main.go:135 +0xfd
+created by gosublime/cmd/margo_pkg.Main
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/main.go:134 +0x55e
+
+goroutine 38 [chan receive]:
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:187 +0xba
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+goroutine 39 [chan receive]:
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:187 +0xba
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+goroutine 40 [chan receive]:
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:187 +0xba
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+goroutine 41 [chan receive]:
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:187 +0xba
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+goroutine 42 [chan receive]:
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:187 +0xba
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+goroutine 43 [chan receive]:
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:187 +0xba
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+goroutine 44 [chan receive]:
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:187 +0xba
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+goroutine 45 [chan receive]:
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:187 +0xba
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+goroutine 46 [chan receive]:
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:187 +0xba
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+goroutine 47 [chan receive]:
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:187 +0xba
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+goroutine 48 [chan receive]:
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:187 +0xba
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+goroutine 81 [chan receive]:
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:187 +0xba
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+goroutine 82 [chan receive]:
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:187 +0xba
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+goroutine 83 [chan receive]:
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:187 +0xba
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+goroutine 85 [chan receive]:
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:187 +0xba
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+goroutine 86 [chan receive]:
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:187 +0xba
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+goroutine 87 [chan receive]:
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:187 +0xba
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+goroutine 88 [chan receive]:
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:187 +0xba
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+goroutine 89 [chan receive]:
+gosublime/cmd/margo_pkg.(*Broker).worker(0xc0421c22a0, 0xc0422d8570, 0xc0421380c0)
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:187 +0xba
+created by gosublime/cmd/margo_pkg.(*Broker).Loop
+	C:/Users/dajun.ldj/AppData/Roaming/Sublime Text 3/Packages/GoSublime/src/gosublime/cmd/margo_pkg/broker.go:209 +0x11e
+
+
+
+** 2018-04-27 09:35:45.294786 **:
+GsComplete: broker: gocode_complete#mg9.autoken.65ffcf08-e5c3-44a1-8fe6-baad743698c1 PANIC
+--------------------------------
+Gocode pkg: "hello"
+Gocode pkg: "."
+Gocode pkg: "hello"
+Gocode pkg: "."
+Gocode pkg: "hello"
+Gocode pkg: "."
+Gocode pkg: "."
+Gocode env: gocode.margoEnv{LibPath:"C:\\Go\\pkg\\windows_amd64;D:\\code\\golang\\pkg\\windows_amd64", GOOS:"windows", GOARCH:"amd64", Compiler:"gc", GOROOT:"C:\\Go\\", GOPATH:"D:\\code\\golang", InstallSuffix:""}
+Gocode pkg: "."
+Gocode env: gocode.margoEnv{LibPath:"C:\\msys64\\mingw64\\lib\\go\\pkg\\windows_amd64;D:\\code\\golang\\pkg\\windows_amd64", GOOS:"windows", GOARCH:"amd64", Compiler:"gc", GOROOT:"C:\\msys64\\mingw64\\lib\\go", GOPATH:"D:\\code\\golang", InstallSuffix:""}
+Gocode pkg: "hello"
+Gocode env: gocode.margoEnv{LibPath:"C:\\msys64\\mingw64\\lib\\go\\pkg\\windows_amd64;D:\\code\\golang\\pkg\\windows_amd64", GOOS:"windows", GOARCH:"amd64", Compiler:"gc", GOROOT:"C:\\msys64\\mingw64\\lib\\go", GOPATH:"D:\\code\\golang", InstallSuffix:""}
+Gocode pkg: "."
+Gocode pkg: "hello"
+Gocode pkg: "main"
+Gocode pkg: "."
+Gocode pkg: "."
+Gocode env: gocode.margoEnv{LibPath:"C:\\msys64\\mingw64\\lib\\go\\pkg\\windows_amd64;D:\\code\\golang\\pkg\\windows_amd64", GOOS:"windows", GOARCH:"amd64", Compiler:"gc", GOROOT:"C:\\msys64\\mingw64\\lib\\go", GOPATH:"D:\\code\\golang", InstallSuffix:""}
+Gocode pkg: "."
+Gocode env: gocode.margoEnv{LibPath:"C:\\msys64\\mingw64\\lib\\go\\pkg\\windows_amd64;D:\\code\\golang\\pkg\\windows_amd64", GOOS:"windows", GOARCH:"amd64", Compiler:"gc", GOROOT:"C:\\msys64\\mingw64\\lib\\go", GOPATH:"D:\\code\\golang", InstallSuffix:""}
+Gocode pkg: "main"
+Gocode pkg: "."
+Gocode pkg: "main"
+Gocode pkg: "."
+Gocode pkg: "main"
+Gocode pkg: "."
+Gocode pkg: "main"
+Gocode pkg: "."
+Gocode pkg: "main"
+Gocode pkg: "."
+Gocode pkg: "main"
+Gocode pkg: "."
+Gocode pkg: "main"
+Gocode pkg: "."
+Gocode pkg: "main"
+Gocode pkg: "."
+Gocode pkg: "main"
+Gocode pkg: "simpledemo"
+Gocode pkg: "main"
+Gocode pkg: "."
+Gocode pkg: "main"
+Gocode pkg: "gmweb"
+Gocode pkg: "gmweb/routers"
+Gocode pkg: "."
+Gocode pkg: "main"
+Gocode pkg: "."
+Gocode pkg: "main"
+Gocode pkg: "."
+Gocode pkg: "main"
+Gocode pkg: "."
+Gocode env: gocode.margoEnv{LibPath:"C:\\msys64\\mingw64\\lib\\go\\pkg\\windows_amd64;D:\\code\\golang\\pkg\\windows_amd64", GOOS:"windows", GOARCH:"amd64", Compiler:"gc", GOROOT:"C:\\msys64\\mingw64\\lib\\go", GOPATH:"D:\\code\\golang", InstallSuffix:""}
+Gocode pkg: "."
+Gocode env: gocode.margoEnv{LibPath:"C:\\msys64\\mingw64\\lib\\go\\pkg\\windows_amd64;D:\\code\\golang\\pkg\\windows_amd64", GOOS:"windows", GOARCH:"amd64", Compiler:"gc", GOROOT:"C:\\msys64\\mingw64\\lib\\go", GOPATH:"D:\\code\\golang", InstallSuffix:""}
+Gocode pkg: "."
+Gocode env: gocode.margoEnv{LibPath:"C:\\msys64\\mingw64\\lib\\go\\pkg\\windows_amd64;D:\\code\\golang\\pkg\\windows_amd64", GOOS:"windows", GOARCH:"amd64", Compiler:"gc", GOROOT:"C:\\msys64\\mingw64\\lib\\go", GOPATH:"D:\\code\\golang", InstallSuffix:""}
+Gocode pkg: "."
+Gocode env: gocode.margoEnv{LibPath:"C:\\msys64\\mingw64\\lib\\go\\pkg\\windows_amd64;D:\\code\\golang\\pkg\\windows_amd64", GOOS:"windows", GOARCH:"amd64", Compiler:"gc", GOROOT:"C:\\msys64\\mingw64\\lib\\go", GOPATH:"D:\\code\\golang", InstallSuffix:""}
